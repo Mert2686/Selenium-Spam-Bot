@@ -3,7 +3,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 
 username = input("\nGirilcek Hesabın Kullanıcı adı: ")
-şifre = "HeLyUm25_70"
+şifre = input("\nGirilcek Hesabın şifresi" : ")
 hedef_hesap = input("\nHedef Hesap : ")
 c = "videoyu beğen"
 
