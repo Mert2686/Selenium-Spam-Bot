@@ -2,10 +2,10 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 
-username = "mrtcn_26_86"#input("\nGirilcek Hesabın Kullanıcı adı: ")
+username = input("\nGirilcek Hesabın Kullanıcı adı: ")
 şifre = "HeLyUm25_70"
-hedef_hesap = "gaffar_krt"
-nah = "biticen ulAN"
+hedef_hesap = input("\nHedef Hesap : ")
+c = "videoyu beğen"
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get("https://www.instagram.com/?hl=tr")
@@ -37,7 +37,7 @@ foto_tıkla = driver.find_element_by_xpath("//div[@class='_9AhH0']")
 foto_tıkla.click()
 sleep(2)
 
-for atak in nah:
+for atak in c:
             üç_nokta = driver.find_element_by_xpath("//div[@style='height: 24px; width: 24px;']")
             üç_nokta.click()
             sleep(2)
